@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='script'>
+
+<head>
+  <link data-require="bootstrap-css@3.3.6" data-semver="3.3.6" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.css" />
+  <script src="https://code.angularjs.org/2.0.0-beta.6/angular2.min.js" data-semver="2.0.0" data-require="angular.js@2.0.0"></script>
+  <script data-require="jquery@*" data-semver="2.2.0" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script data-require="bootstrap@3.3.6" data-semver="3.3.6" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+  
+  <header>
+    <div class = 'logo'><img src = 'https://lh3.googleusercontent.com/-Goa1-rYml3g/Szz5HfylFUI/AAAAAAAAAAs/Q6L_tqgPNXc/s1600/logo-light.gif'></div>
+  </header>
+  
+  <div class="col-xs-12" style="height:50px;"></div>
+  
+  <div ng-controller="ButtonsCtrl">
+    <h4>LOG IN HERE</h4>
+    <div class="col-xs-12" style="height:5px;"></div>
+    <h6>USERNAME</h6>
+    <input type="text" name="username" id="username" class="form-control" style = "width:300px" >
+    <h6>PASSWORD</h6>
+    <pre style = "width: 300px">{{singleModel}}</pre>
+    <div class="col-xs-12" style="height:10px;"></div>
+    <button type="button" class="btn btn-primary" ng-model="singleModel" uib-btn-checkbox btn-checkbox-true="1" btn-checkbox-false="0">
+      LOG IN
+    </button>
+
+  </div>
+</body>
